@@ -54,3 +54,4 @@ Like this:
 Replace **SkypeLogView** in both places with the software name
 
 # Download
+[Releases](https://github.com/Kevinsillo/datastealer/releases)
