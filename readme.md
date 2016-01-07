@@ -4,7 +4,7 @@
 DataStealer pretends be a Antivirus USB to gather personal information in Windows systems.
 
 ## Intructions
-Just copy all files/folders and paste in USB device. Hide **"data"** folder and **"run.bat"**. When you conect USB device in Windows system just doble click in AntivirusUSB.vbs and DataStealer copy all files stealthily from pc.
+Just copy all from DataStealer folder and paste in USB device. Hide **"data"** folder and **"run.bat"**. When you conect USB device in Windows system just doble click in AntivirusUSB.vbs and DataStealer copy all files stealthily from pc.
 
 ***NOTE: You can use autotun.inf for auto-execute .vbs file but it only works in Windows Vista and Windows XP***
 
