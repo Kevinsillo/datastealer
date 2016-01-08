@@ -35,7 +35,7 @@ You can change diferents values in **run.bat**.
 >set stealfiles=**true / false** [DEFAULT TRUE]
 
 **Enable or disable Nirsoft software**
->set nirsoft=**true / false** [DEFAULT TRUE]
+>set nirsoft=**true / false** [DEFAULT FALSE]
 >
 >set soft=**[names of Nirsoft software files]** [DEFAULT EMPTY]
 
