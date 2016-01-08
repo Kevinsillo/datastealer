@@ -21,6 +21,7 @@ You can change diferents values in **run.bat**.
 
 **Enable or disable messages**
 >set msg1=**true / false** [DEFAULT TRUE]
+>
 >set msg2=**true / false** [DEFAULT TRUE]
 >
 >set msg1text=Analyzing USB device for searching virus. [WINDOWS TEXT]
