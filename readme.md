@@ -33,7 +33,9 @@ You can change diferents values in **run.bat**.
 
 **Enable or disable file theft and sizes (kilobyte)**
 >set stealfiles=**true / false** [DEFAULT TRUE]
+>
 >set sizemax=**50000**
+>
 >set sizemin=**100**
 
 **Enable or disable Nirsoft software**
